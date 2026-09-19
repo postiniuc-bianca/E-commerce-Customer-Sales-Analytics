@@ -45,7 +45,19 @@ The database consists of 5 interconnected tables:
 - **DDL / schema management** — `CREATE TABLE`, `ALTER TABLE` (renaming tables/columns, adding constraints, foreign keys)
 
 ## Repository Structure
-[cum sunt organizate fișierele]
+
+ecommerce-customer-analytics/
+├── README.md
+├── LICENSE
+├── sql/
+│   ├── 01_customer_analysis.sql
+│   ├── 02_purchase_behavior.sql
+│   ├── 03_product_brand_analysis.sql
+│   └── 04_retention_funnel.sql
+├── schema/
+│   └── database_schema.png
+└── results/
+    └── (screenshots or exports of key query outputs)
 
 ## Key Findings
 [concluziile principale, scrise pentru un cititor non-tehnic]
