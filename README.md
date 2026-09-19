@@ -67,6 +67,10 @@ ecommerce-customer-analytics/
 
 ## ANALYSIS 1: CUSTOMER ANALYSIS
 
+
+<img width="435" height="150" alt="image" src="https://github.com/user-attachments/assets/ad64693b-16ac-415b-9caa-681af28dd5a8" />
+
+
 ## ANALYSIS 2: PURCHASE BEHAVIOR
 
 ## ANALYSIS 3: BRAND & PRODUCT CATEGORY ANALYSIS
