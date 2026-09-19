@@ -68,15 +68,51 @@ ecommerce-customer-analytics/
 ## ANALYSIS 1: CUSTOMER ANALYSIS
 
 
+The customer base is almost evenly split across the three gender categories, 
+with less than 2 percentage points separating the highest and lowest groups. 
+No single gender dominates, suggesting the platform's customer base is 
+broadly balanced across this demographic dimension.
+
 <img width="435" height="150" alt="image" src="https://github.com/user-attachments/assets/ad64693b-16ac-415b-9caa-681af28dd5a8" />
 
-<img width="1428" height="420" alt="image" src="https://github.com/user-attachments/assets/aa3ae9d7-a7d3-4c04-9ca1-f3808c2d38f0" />
+<br><br>
 
-<img width="533" height="401" alt="image" src="https://github.com/user-attachments/assets/0b24c579-6427-4c98-b9ef-8bdf43ac74b5" />
+Customer signups have remained relatively steady over the past 21 months, 
+consistently ranging between 400-490 new customers per month. The oldest 
+cohort (22 months since signup) is notably smaller (~200 customers), likely 
+reflecting a shorter observation window at the start of the tracked period 
+rather than an actual drop in acquisition. No clear growth or decline trend 
+is visible — customer acquisition appears stable rather than accelerating 
+or slowing over time.
 
-<img width="537" height="401" alt="image" src="https://github.com/user-attachments/assets/ade1ef8a-695b-4d42-9444-aa7b1a14fb2c" />
+<img width="1000" height="310" alt="image" src="https://github.com/user-attachments/assets/aa3ae9d7-a7d3-4c04-9ca1-f3808c2d38f0" />
 
-<img width="292" height="333" alt="image" src="https://github.com/user-attachments/assets/e189dd97-442f-45d4-bb16-c6d4f50cafd2" />
+<br><br>
+
+Customer value is heavily right-skewed: over half of all customers (5,031, ~52%) 
+generate under 1,200 in total value, and the count drops off sharply with each 
+higher tier. Fewer than 20 customers exceed 8,400 in total value — a small but 
+potentially high-priority segment for retention efforts.
+
+<img width="380" height="280" alt="image" src="https://github.com/user-attachments/assets/0b24c579-6427-4c98-b9ef-8bdf43ac74b5" />
+
+Zooming into the largest tier reveals it isn't uniform either — customer count 
+decreases steadily from 1,316 (under 200) down to 313 (1,800-2,000), 
+following the same right-skewed pattern seen at the broader level. The final 
+bucket (2,079 customers, 2,000+) captures everyone above this granular range, 
+consistent with the "long tail" already visible in the overview.
+
+<img width="380" height="280" alt="image" src="https://github.com/user-attachments/assets/ade1ef8a-695b-4d42-9444-aa7b1a14fb2c" />
+
+<br><br>
+
+Most customers (5,282, ~53%) have a return rate under 10%, indicating low 
+return behavior overall. However, the distribution is irregular rather than 
+smoothly decreasing — noticeable spikes appear at 40%-50% and 90%-100%, with 
+unusually low counts at 50%-60% and 70%-80% (and zero customers in the 
+80%-90% range).
+
+<img width="220" height="270" alt="image" src="https://github.com/user-attachments/assets/e189dd97-442f-45d4-bb16-c6d4f50cafd2" />
 
 ## ANALYSIS 2: PURCHASE BEHAVIOR
 
