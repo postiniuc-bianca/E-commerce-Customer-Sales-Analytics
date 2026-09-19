@@ -1,6 +1,18 @@
+1.1 Gender distribution
+-- Shows how many customers fall into each gender category
+
+
 
 -- 1.2 Gender distribution
 -- Shows how many customers fall into each gender category
 SELECT COUNT(user_id) AS users, gender 
 FROM customers_detail
 GROUP BY gender;
+
+
+- 1.3 Revenue tier distribution
+-- Customers grouped by total value brought (total_value)
+
+
+-- 1.4 Return rate distribution
+-- Customers grouped by return rate tiers (return_rate)
