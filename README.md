@@ -46,6 +46,8 @@ The database consists of 5 interconnected tables:
 
 ## Repository Structure
 
+
+```
 ecommerce-customer-analytics/
 ├── README.md
 ├── LICENSE
@@ -58,6 +60,7 @@ ecommerce-customer-analytics/
 │   └── database_schema.png
 └── results/
     └── (screenshots or exports of key query outputs)
+```
 
 ## Key Findings
 [concluziile principale, scrise pentru un cititor non-tehnic]
