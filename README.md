@@ -116,6 +116,54 @@ unusually low counts at 50%-60% and 70%-80% (and zero customers in the
 
 ## ANALYSIS 2: PURCHASE BEHAVIOR
 
+Order values follow the same right-skewed pattern seen in customer total 
+value (Analysis 1.3): the vast majority of orders (15,199, ~76%) fall under 
+800, and order count drops sharply with each higher tier. Fewer than 70 
+orders across the entire dataset exceed 5,600 — high-value orders are rare 
+outliers rather than a meaningful segment size.
+
+<img width="400" height="280" alt="image" src="https://github.com/user-attachments/assets/63e724b2-5e92-4132-92b2-8b87bfdc4d91" />
+
+<br><br>
+
+The number of items per order follows a clear declining pattern: single-item 
+orders are the most common (5,592, ~28% of all orders), and order frequency 
+drops steadily as basket size increases. Orders with more than 8 items are 
+rare, together accounting for less than 3% of total orders. This suggests 
+most customers purchase in small, focused baskets rather than bulk-buying 
+across many products at once.
+
+<img width="200" height="330" alt="image" src="https://github.com/user-attachments/assets/952ba6a8-eef6-4316-b849-cc0a0e51d575" />
+
+<br><br>
+
+To identify products that are typically bought in bulk rather than as single 
+units, each product's average quantity per order was calculated, then filtered 
+to those exceeding 1.5 (i.e., customers order more than one unit on average). 
+Pet Supplies and Clothing have the highest number of such products (46 and 45), 
+suggesting these categories see more multi-unit purchasing behavior — possibly 
+due to items like pet food refills or clothing bought in multiple sizes/colors. 
+Automotive has the fewest (33), consistent with typically being a lower-frequency, 
+single-item purchase category.
+
+<img width="240" height="240" alt="image" src="https://github.com/user-attachments/assets/5be8181a-8564-49ba-bae6-36ecc94f1b78" />
+
+<br><br>
+For each order, the average price of the products included in it was 
+calculated (not the total order value, but the average price per product). 
+Orders were then grouped into 10 equal-width buckets based on this average 
+value.
+Unlike the previous distributions in this analysis, order count doesn't peak 
+in the lowest bucket — it peaks in the second one (50-100, with 4,881 orders), 
+before declining steadily as expected. The final bucket is notably wide 
+(500-2,338) and captures a comparatively large number of orders (1,770), 
+consistent with the same right-skewed "long tail" pattern seen throughout 
+this analysis, where a small number of orders contain unusually high-value 
+items.
+<img width="500" height="310" alt="image" src="https://github.com/user-attachments/assets/2a2c15e0-d14c-43ef-bf2d-ccf583f90d58" />
+<img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/346e1110-6eab-4241-bcce-40b04489125a" />
+
+
 ## ANALYSIS 3: BRAND & PRODUCT CATEGORY ANALYSIS
 
 ## ANALYSIS 4: RETENTION FUNNEL
