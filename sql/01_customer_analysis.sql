@@ -10,7 +10,7 @@ FROM customers_detail
 GROUP BY gender;
 
 
-- 1.3 Revenue tier distribution
+-- 1.3 Revenue tier distribution
 -- Customers grouped by total value brought (total_value)
 
 
