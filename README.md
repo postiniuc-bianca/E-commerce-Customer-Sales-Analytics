@@ -1,7 +1,16 @@
 # E-commerce Customer Analytics: Cohort & Retention Analysis
 
 ## Overview
-[o scurtă descriere - de ce ai făcut acest proiect, ce întrebare de business rezolvi]
+
+This project analyzes customer behavior and purchasing patterns for a synthetic e-commerce platform using SQL. The goal is to understand who the customers are, how they shop, which products and brands drive the most value, and how well the business retains customers over time.
+
+**Key questions explored:**
+
+- What does the customer base look like, and how does behavior vary across segments?
+- How do customers shop — order size, order value, and purchase frequency?
+- Which product categories and brands generate the most value and satisfaction?
+- How well does the business retain customers month over month?
+
 
 ## Database Structure
 
@@ -25,7 +34,15 @@ The database consists of 5 interconnected tables:
 
 ## SQL Techniques Used
 
-
+- **Aggregation functions** — `COUNT`, `SUM`, `AVG` for customer and order metrics
+- **JOIN operations** — `INNER JOIN` across customers, orders, order items, and products tables
+- **GROUP BY / HAVING** — segmenting customers and orders by category, brand, status, and demographic attributes
+- **CASE WHEN** — bucketing continuous values into readable ranges (e.g., return rate tiers, order value ranges)
+- **Date functions** — `DATE_TRUNC`, `EXTRACT` for calculating customer tenure and monthly cohorts
+- **Common Table Expressions (CTEs)** — structuring multi-step queries for readability
+- **Window functions** — `COUNT() OVER`, `FIRST_VALUE() OVER`, `PARTITION BY` for cohort retention analysis
+- **Subqueries (correlated and non-correlated)** — comparing individual values against group averages
+- **DDL / schema management** — `CREATE TABLE`, `ALTER TABLE` (renaming tables/columns, adding constraints, foreign keys)
 
 ## Repository Structure
 [cum sunt organizate fișierele]
