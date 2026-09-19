@@ -50,10 +50,11 @@ The database consists of 5 interconnected tables:
 ## Key Findings
 [concluziile principale, scrise pentru un cititor non-tehnic]
 
-## Analiza 1
+## ANALYSIS 1: CUSTOMER ANALYSIS
 
-## Analiza 2
+## ANALYSIS 2: PURCHASE BEHAVIOR
 
-## Analiza 3 
+## ANALYSIS 3: BRAND & PRODUCT CATEGORY ANALYSIS
 
-## Cocluzii generale 
+## ANALYSIS 4: RETENTION FUNNEL
+
