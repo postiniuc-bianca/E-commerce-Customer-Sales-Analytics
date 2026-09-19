@@ -70,6 +70,13 @@ ecommerce-customer-analytics/
 
 <img width="435" height="150" alt="image" src="https://github.com/user-attachments/assets/ad64693b-16ac-415b-9caa-681af28dd5a8" />
 
+<img width="1428" height="420" alt="image" src="https://github.com/user-attachments/assets/aa3ae9d7-a7d3-4c04-9ca1-f3808c2d38f0" />
+
+<img width="533" height="401" alt="image" src="https://github.com/user-attachments/assets/0b24c579-6427-4c98-b9ef-8bdf43ac74b5" />
+
+<img width="537" height="401" alt="image" src="https://github.com/user-attachments/assets/ade1ef8a-695b-4d42-9444-aa7b1a14fb2c" />
+
+<img width="292" height="333" alt="image" src="https://github.com/user-attachments/assets/e189dd97-442f-45d4-bb16-c6d4f50cafd2" />
 
 ## ANALYSIS 2: PURCHASE BEHAVIOR
 
