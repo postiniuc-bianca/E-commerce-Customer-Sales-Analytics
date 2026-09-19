@@ -1,0 +1,6 @@
+
+-- 1.2 Gender distribution
+-- Shows how many customers fall into each gender category
+SELECT COUNT(user_id) AS users, gender 
+FROM customers_detail
+GROUP BY gender;
