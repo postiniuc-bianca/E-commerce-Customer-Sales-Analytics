@@ -5,7 +5,10 @@
 
 -- 1.2 Gender distribution
 -- Shows how many customers fall into each gender category
-SELECT COUNT(user_id) AS users, gender 
+SELECT 
+    gender, 
+    COUNT(user_id) AS users,
+    ROUND(100.0 * COUNT(user_id) / SUM(COUNT(user_id)) OVER (), 2) AS percentage
 FROM customers_detail
 GROUP BY gender;
 
