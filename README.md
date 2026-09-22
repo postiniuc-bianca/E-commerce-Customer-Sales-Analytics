@@ -166,5 +166,63 @@ items.
 
 ## ANALYSIS 3: BRAND & PRODUCT CATEGORY ANALYSIS
 
+Revenue is distributed fairly evenly across the 12 brands, with no single 
+brand dominating the market — the gap between the highest (Willow, 1.33M) 
+and lowest (NeoTech, 741K) performing brand is roughly 44%, a moderate 
+spread rather than an extreme one. This suggests a competitive, well-balanced 
+brand portfolio rather than reliance on one or two flagship brands.
+
+<img width="300" height="380" alt="image" src="https://github.com/user-attachments/assets/b59ec8be-0c10-4b1d-b3b6-4694d52f29a7" />
+
+<br><br>
+
+
+Unlike the balanced distribution seen across brands, product categories show 
+a sharp concentration of revenue: Electronics alone generates nearly 5M, more 
+than the combined value of the bottom 7 categories together. Electronics and 
+Automotive together account for roughly 60% of total revenue, while Groceries 
+generates barely 1.6% of that total — a 55x difference between the top and 
+bottom category. This suggests category (likely tied to typical unit price) 
+is a far stronger driver of revenue than brand choice.
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/881243a7-e8e6-49b3-84a8-d6598abf3dd0" />
+
+<br><br>
+
+Drilling into Electronics, the top revenue category (Analysis 3.2), shows that
+all 12 brands contribute to its 4.96M total, but less evenly than across the
+platform as a whole: Willow generates about 3 times the value of Everest, and
+the top three brands (Willow, Acme, Orion) account for roughly 35% of the
+category. Willow leads on orders, value and average value per order, while
+Pulse ranks 7th in orders but 4th in value thanks to a higher average order
+value. Values include cancelled orders and represent ordered, not collected,
+revenue.
+
+<img width="400" height="370" alt="image" src="https://github.com/user-attachments/assets/09c39804-23ca-4312-9494-9b92ff6d5585" />
+
+<br><br>
+
+Unlike total revenue (Analysis 3.2), order counts are remarkably even across 
+all categories, ranging only from 3,866 to 4,729 — less than a 22% spread, 
+compared to the 55x spread seen in revenue. This confirms that Electronics 
+and Automotive dominate revenue not because they're ordered more often, but 
+because of significantly higher price per item. Conversely, Pet Supplies and 
+Toys are ordered the most frequently, yet contribute relatively little to 
+total revenue — likely lower-priced, high-frequency purchases.
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4314dd5c-5136-4ac9-9e01-1e1b420f4133" />
+
+<br><br>
+
+Cancelled orders are fairly evenly distributed across brands, ranging from 
+549 to 741 — a spread of roughly 35%, similar in scale to the total revenue 
+spread seen in Analysis 3.1. Notably, Zenith has both the highest average 
+rating (Analysis 3.4) and the highest number of cancelled orders, while Pulse 
+has the fewest cancellations. No brand stands out as having a disproportionate 
+cancellation problem relative to its overall sales volume.
+
+<img width="300" height="340" alt="image" src="https://github.com/user-attachments/assets/fc096d69-e0d5-4bf1-8393-d143453bc5f2" />
+
+
 ## ANALYSIS 4: RETENTION FUNNEL
 
