@@ -163,6 +163,24 @@ items.
 <img width="500" height="310" alt="image" src="https://github.com/user-attachments/assets/2a2c15e0-d14c-43ef-bf2d-ccf583f90d58" />
 <img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/346e1110-6eab-4241-bcce-40b04489125a" />
 
+<br><br>
+
+Sales remain broadly stable over the period, with 814-956 orders and roughly
+460K-587K in value per month. Month-over-month changes mostly stay within ±10%,
+with a peak in July 2024 (587K) and the lowest value in February 2025 (460K).
+A similar pattern appears in both years, with a rise in December followed by a
+drop in January-February. Comparing January-October across the two years, 2025
+shows about 4.7% lower value but only 1.8% fewer orders, meaning the average
+order value decreased (from about 601 to 583).
+
+**Note:** November 2025 contains only partial data (389 orders), so its -46.67%
+drop reflects an incomplete month rather than a real decline, and it is
+excluded from the comparisons above.
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/8106f94e-fc71-4aa2-8c6d-c1019a5813a4" />
+
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/1eedb61e-69fe-4dbe-9c99-5034cea40e28" />
+
 
 ## ANALYSIS 3: BRAND & PRODUCT CATEGORY ANALYSIS
 
