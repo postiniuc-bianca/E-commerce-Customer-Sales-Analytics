@@ -14,7 +14,6 @@ This project analyzes customer behavior and purchasing patterns for a synthetic 
 
 ## Database Structure
 
-
 The database consists of 5 interconnected tables:
 
 - **customers_detail** — customer demographic information (name, email, gender, city, signup date)
@@ -242,7 +241,7 @@ cancellation problem relative to its overall sales volume.
 <img width="300" height="340" alt="image" src="https://github.com/user-attachments/assets/fc096d69-e0d5-4bf1-8393-d143453bc5f2" />
 
 
-## ANALYSIS 4: RETENTION FUNNEL
+## ANALYSIS 4: COHORT RETENTION ANALYSIS
 
 This analysis groups customers by their signup month (cohort) and tracks how
 many of those who ordered in their first month continued to order in each of
