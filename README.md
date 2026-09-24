@@ -244,3 +244,23 @@ cancellation problem relative to its overall sales volume.
 
 ## ANALYSIS 4: RETENTION FUNNEL
 
+This analysis groups customers by their signup month (cohort) and tracks how
+many of those who ordered in their first month continued to order in each of
+the following months without a break. Retention is shown as a percentage of
+each cohort's starting size, making it easy to compare how long customers
+from different months stay active.
+
+<br>
+Retention drops sharply after the first month. Each cohort starts with only
+6-28 customers, and most of them stop ordering after month 1, where retention
+ranges from 0% to about 20%. Only three cohorts keep any customers in month 2,
+and just one (November 2024) reaches month 3, meaning almost no customer
+orders continuously for more than two months in a row.
+
+
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/e21e0ebc-dffc-4046-961c-3a5f0d385525" />
+
+**Note:** the results are consistent with randomly generated order data, so
+they illustrate the method rather than real customer behavior.
+
+
