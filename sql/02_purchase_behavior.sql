@@ -56,4 +56,31 @@ FROM (
 GROUP BY price_category
 ORDER BY price_category
 
+-- 2.5 Monthly sales trend
+-- Number of orders and total value per month, with month-over-month growth (%)
 
+WITH monthly AS (
+    SELECT
+        DATE_TRUNC('month', order_date)::date AS order_month,
+        COUNT(order_id) AS total_orders,
+        SUM(total_amount) AS total_value
+    FROM orders
+    GROUP BY 1
+),
+with_previous AS (
+    SELECT
+        order_month,
+        total_orders,
+        total_value,
+        LAG(total_value) OVER (ORDER BY order_month) AS previous_month_value
+    FROM monthly
+)
+SELECT
+    order_month,
+    total_orders,
+    total_value,
+    previous_month_value,
+    ROUND(100.0 * (total_value - previous_month_value)
+          / NULLIF(previous_month_value, 0), 2) AS mom_growth_pct
+FROM with_previous
+ORDER BY order_month;
