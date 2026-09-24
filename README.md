@@ -61,8 +61,25 @@ ecommerce-customer-analytics/
     └── (screenshots or exports of key query outputs)
 ```
 
-## Key Findings
-[concluziile principale, scrise pentru un cititor non-tehnic]
+## Key Findings & Recommendations
+
+- **60% of revenue comes from just 2 categories** (Electronics, Automotive).
+  → Focus marketing and stock on these; use cheaper categories for cross-selling.
+
+- **76% of orders are under 800, and 79% contain 4 items or fewer.**
+  → Increase basket size with bundles, "frequently bought together"
+  suggestions and a free-shipping threshold set just above the average
+  order value (~596).
+
+- **52% of customers spend under 1,200; fewer than 20 exceed 8,400.**
+  → Launch a loyalty program for top customers and upsell campaigns for the rest.
+
+- **In Electronics, the top 3 brands generate 35% of value; Willow earns 3× Everest.**
+  → Strengthen partnerships with top brands and review low performers.
+
+- **Almost no customer orders for more than 2 consecutive months.**
+  → Build repeat purchasing with post-purchase emails and second-order offers.
+  
 
 ## ANALYSIS 1: CUSTOMER ANALYSIS
 
