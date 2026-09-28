@@ -1,4 +1,4 @@
-# E-commerce Customer Analytics: Cohort & Retention Analysis
+# E-commerce Customer & Sales Analytics
 
 ## Overview
 
