@@ -1,22 +1,22 @@
---1.1 Gender distribution
+-- 1.1 Gender distribution
 -- Shows how many customers fall into each gender category
-
-SELECT 
-    COUNT(user_id),
-    (EXTRACT(YEAR FROM AGE(DATE '2025-11-14', signup_date)) * 12) +
-    EXTRACT(MONTH FROM AGE(DATE '2025-11-14', signup_date)) AS months_since_signup
-FROM customers_detail
-GROUP By months_since_signup
-ORDER BY months_since_signup DESC
-
--- 1.2 Gender distribution
--- Shows how many customers fall into each gender category
-SELECT 
-    gender, 
+SELECT
+    gender,
     COUNT(user_id) AS users,
     ROUND(100.0 * COUNT(user_id) / SUM(COUNT(user_id)) OVER (), 2) AS percentage
 FROM customers_detail
 GROUP BY gender;
+
+
+-- 1.2 Customer tenure
+-- Time elapsed since signup, in months (reference date: 2025-11-14)
+SELECT
+    COUNT(user_id),
+    (EXTRACT(YEAR FROM AGE(DATE '2025-11-14', signup_date)) * 12) +
+    EXTRACT(MONTH FROM AGE(DATE '2025-11-14', signup_date)) AS months_since_signup
+FROM customers_detail
+GROUP BY months_since_signup
+ORDER BY months_since_signup DESC;
 
 
 -- 1.3 Revenue tier distribution
