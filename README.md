@@ -47,18 +47,14 @@ The database consists of 5 interconnected tables:
 
 
 ```
-ecommerce-customer-analytics/
+E-commerce-Customer-Sales-Analytics/
 ├── README.md
 ├── LICENSE
-├── sql/
-│   ├── 01_customer_analysis.sql
-│   ├── 02_purchase_behavior.sql
-│   ├── 03_product_brand_analysis.sql
-│   └── 04_retention_funnel.sql
-├── schema/
-│   └── database_schema.png
-└── results/
-    └── (screenshots or exports of key query outputs)
+└── sql/
+    ├── 01_customer_analysis.sql
+    ├── 02_purchase_behavior.sql
+    ├── 03_product_brand_analysis.sql
+    └── 04_cohort_retention_analysis.sql
 ```
 
 ## Key Findings & Recommendations
@@ -71,7 +67,7 @@ ecommerce-customer-analytics/
   suggestions and a free-shipping threshold set just above the average
   order value (~596).
 
-- **52% of customers spend under 1,200; fewer than 20 exceed 8,400.**
+- **58% of customers spend under 1,200; only 16 exceed 8,400.**
   → Launch a loyalty program for top customers and upsell campaigns for the rest.
 
 - **In Electronics, the top 3 brands generate 35% of value; Willow earns 3× Everest.**
@@ -89,6 +85,8 @@ with less than 2 percentage points separating the highest and lowest groups.
 No single gender dominates, suggesting the platform's customer base is 
 broadly balanced across this demographic dimension.
 
+*Figure 1.1 – Customer distribution by gender*
+
 <img width="435" height="150" alt="image" src="https://github.com/user-attachments/assets/ad64693b-16ac-415b-9caa-681af28dd5a8" />
 
 <br><br>
@@ -101,6 +99,8 @@ rather than an actual drop in acquisition. No clear growth or decline trend
 is visible — customer acquisition appears stable rather than accelerating 
 or slowing over time.
 
+*Figure 1.2 – Customer distribution by tenure since signup*
+
 <img width="1000" height="310" alt="image" src="https://github.com/user-attachments/assets/aa3ae9d7-a7d3-4c04-9ca1-f3808c2d38f0" />
 
 <br><br>
@@ -110,6 +110,8 @@ generate under 1,200 in total value, and the count drops off sharply with each
 higher tier. Fewer than 20 customers exceed 8,400 in total value — a small but 
 potentially high-priority segment for retention efforts.
 
+*Figure 1.3a – Customer distribution by total value (revenue tiers)*
+
 <img width="380" height="280" alt="image" src="https://github.com/user-attachments/assets/0b24c579-6427-4c98-b9ef-8bdf43ac74b5" />
 
 Zooming into the largest tier reveals it isn't uniform either — customer count 
@@ -117,6 +119,8 @@ decreases steadily from 1,316 (under 200) down to 313 (1,800-2,000),
 following the same right-skewed pattern seen at the broader level. The final 
 bucket (2,079 customers, 2,000+) captures everyone above this granular range, 
 consistent with the "long tail" already visible in the overview.
+
+*Figure 1.3b – Detailed distribution of lower-value customers (200-unit ranges)*
 
 <img width="380" height="280" alt="image" src="https://github.com/user-attachments/assets/ade1ef8a-695b-4d42-9444-aa7b1a14fb2c" />
 
@@ -128,6 +132,8 @@ smoothly decreasing — noticeable spikes appear at 40%-50% and 90%-100%, with
 unusually low counts at 50%-60% and 70%-80% (and zero customers in the 
 80%-90% range).
 
+*Figure 1.4 – Customer distribution by return rate*
+
 <img width="220" height="270" alt="image" src="https://github.com/user-attachments/assets/e189dd97-442f-45d4-bb16-c6d4f50cafd2" />
 
 ## ANALYSIS 2: PURCHASE BEHAVIOR
@@ -137,6 +143,8 @@ value (Analysis 1.3): the vast majority of orders (15,199, ~76%) fall under
 800, and order count drops sharply with each higher tier. Fewer than 70 
 orders across the entire dataset exceed 5,600 — high-value orders are rare 
 outliers rather than a meaningful segment size.
+
+*Figure 2.1 – Order distribution by order value*
 
 <img width="400" height="280" alt="image" src="https://github.com/user-attachments/assets/63e724b2-5e92-4132-92b2-8b87bfdc4d91" />
 
@@ -148,6 +156,8 @@ drops steadily as basket size increases. Orders with more than 8 items are
 rare, together accounting for less than 3% of total orders. This suggests 
 most customers purchase in small, focused baskets rather than bulk-buying 
 across many products at once.
+
+*Figure 2.2 – Order distribution by number of items per order*
 
 <img width="200" height="330" alt="image" src="https://github.com/user-attachments/assets/952ba6a8-eef6-4316-b849-cc0a0e51d575" />
 
@@ -161,6 +171,8 @@ suggesting these categories see more multi-unit purchasing behavior — possibly
 due to items like pet food refills or clothing bought in multiple sizes/colors. 
 Automotive has the fewest (33), consistent with typically being a lower-frequency, 
 single-item purchase category.
+
+*Figure 2.3 – Products with average quantity above 1.5 per order, by category*
 
 <img width="240" height="240" alt="image" src="https://github.com/user-attachments/assets/5be8181a-8564-49ba-bae6-36ecc94f1b78" />
 
@@ -176,6 +188,9 @@ before declining steadily as expected. The final bucket is notably wide
 consistent with the same right-skewed "long tail" pattern seen throughout 
 this analysis, where a small number of orders contain unusually high-value 
 items.
+
+*Figure 2.4 – Order distribution by average product value in cart*
+
 <img width="500" height="310" alt="image" src="https://github.com/user-attachments/assets/2a2c15e0-d14c-43ef-bf2d-ccf583f90d58" />
 <img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/346e1110-6eab-4241-bcce-40b04489125a" />
 
@@ -193,6 +208,8 @@ order value decreased (from about 601 to 583).
 drop reflects an incomplete month rather than a real decline, and it is
 excluded from the comparisons above.
 
+*Figure 2.5 – Monthly orders, value and month-over-month growth*
+
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/8106f94e-fc71-4aa2-8c6d-c1019a5813a4" />
 
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/1eedb61e-69fe-4dbe-9c99-5034cea40e28" />
@@ -205,6 +222,8 @@ brand dominating the market — the gap between the highest (Willow, 1.33M)
 and lowest (NeoTech, 741K) performing brand is roughly 44%, a moderate 
 spread rather than an extreme one. This suggests a competitive, well-balanced 
 brand portfolio rather than reliance on one or two flagship brands.
+
+*Figure 3.1 – Total value by brand*
 
 <img width="300" height="380" alt="image" src="https://github.com/user-attachments/assets/b59ec8be-0c10-4b1d-b3b6-4694d52f29a7" />
 
@@ -219,6 +238,8 @@ generates barely 1.6% of that total — a 55x difference between the top and
 bottom category. This suggests category (likely tied to typical unit price) 
 is a far stronger driver of revenue than brand choice.
 
+*Figure 3.2 – Total value by product category*
+
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/881243a7-e8e6-49b3-84a8-d6598abf3dd0" />
 
 <br><br>
@@ -232,6 +253,8 @@ Pulse ranks 7th in orders but 4th in value thanks to a higher average order
 value. Values include cancelled orders and represent ordered, not collected,
 revenue.
 
+*Table 3.3 – Electronics: orders and value by brand*
+
 <img width="400" height="370" alt="image" src="https://github.com/user-attachments/assets/09c39804-23ca-4312-9494-9b92ff6d5585" />
 
 <br><br>
@@ -244,6 +267,8 @@ because of significantly higher price per item. Conversely, Pet Supplies and
 Toys are ordered the most frequently, yet contribute relatively little to 
 total revenue — likely lower-priced, high-frequency purchases.
 
+*Table 3.4 – Number of orders by product category*
+
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4314dd5c-5136-4ac9-9e01-1e1b420f4133" />
 
 <br><br>
@@ -254,6 +279,8 @@ spread seen in Analysis 3.1. Notably, Zenith has both the highest average
 rating (Analysis 3.4) and the highest number of cancelled orders, while Pulse 
 has the fewest cancellations. No brand stands out as having a disproportionate 
 cancellation problem relative to its overall sales volume.
+
+*Table 3.5 – Cancelled orders by brand*
 
 <img width="300" height="340" alt="image" src="https://github.com/user-attachments/assets/fc096d69-e0d5-4bf1-8393-d143453bc5f2" />
 
@@ -273,6 +300,7 @@ ranges from 0% to about 20%. Only three cohorts keep any customers in month 2,
 and just one (November 2024) reaches month 3, meaning almost no customer
 orders continuously for more than two months in a row.
 
+*Figure 4.1 – Monthly cohort retention (unbroken chain, % of month 0)*
 
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/e21e0ebc-dffc-4046-961c-3a5f0d385525" />
 
