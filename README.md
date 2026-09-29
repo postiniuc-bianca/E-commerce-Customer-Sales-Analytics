@@ -259,13 +259,14 @@ revenue.
 
 <br><br>
 
-Unlike total revenue (Analysis 3.2), order counts are remarkably even across 
-all categories, ranging only from 3,866 to 4,729 — less than a 22% spread, 
-compared to the 55x spread seen in revenue. This confirms that Electronics 
-and Automotive dominate revenue not because they're ordered more often, but 
-because of significantly higher price per item. Conversely, Pet Supplies and 
-Toys are ordered the most frequently, yet contribute relatively little to 
-total revenue — likely lower-priced, high-frequency purchases.
+Unlike total revenue (Analysis 3.2), order counts are remarkably even across
+all categories, ranging only from 3,552 to 4,286 — about a 21% spread,
+compared to the 55x spread seen in revenue. This confirms that Electronics
+and Automotive dominate revenue not because they're ordered more often, but
+because of significantly higher price per item: they rank only 8th and 6th
+by order count. Conversely, Pet Supplies and Toys are ordered the most
+frequently, yet contribute relatively little to total revenue — likely
+lower-priced, high-frequency purchases.
 
 *Table 3.4 – Number of orders by product category*
 
