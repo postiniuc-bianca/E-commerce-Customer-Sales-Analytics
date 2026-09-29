@@ -34,7 +34,7 @@ ORDER BY total_orders DESC, total_value DESC
 -- Number of orders containing products from each category
 
 
-SELECT pr.category, COUNT( oi.order_id) AS total_orders
+SELECT pr.category, COUNT( DISTINCT oi.order_id) AS total_orders
 FROM order_items AS oi 
 JOIN products AS pr ON pr.product_id=oi.product_id
 GROUP BY pr.category 
