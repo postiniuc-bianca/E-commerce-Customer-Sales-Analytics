@@ -29,7 +29,8 @@ The database consists of 5 interconnected tables:
 - One product → many order items (1:N)
 - One order → many order items (1:N)
 
-<img width="996" height="792" alt="image" src="https://github.com/user-attachments/assets/7d6c91bd-cb4f-46a5-aa34-142e218002f5" />
+<img width="707" height="797" alt="image" src="https://github.com/user-attachments/assets/22aa0582-432f-4f37-8775-3a9cc2b65dd6" />
+
 
 ## SQL Techniques Used
 
