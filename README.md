@@ -33,16 +33,17 @@ The database consists of 5 interconnected tables:
 
 ## SQL Techniques Used
 
-- **Aggregation functions** — `COUNT`, `SUM`, `AVG` for customer and order metrics
-- **JOIN operations** — `INNER JOIN` across customers, orders, order items, and products tables
-- **GROUP BY / HAVING** — segmenting customers and orders by category, brand, status, and demographic attributes
-- **CASE WHEN** — bucketing continuous values into readable ranges (e.g., return rate tiers, order value ranges)
-- **Date functions** — `DATE_TRUNC`, `EXTRACT` for calculating customer tenure and monthly cohorts
-- **Common Table Expressions (CTEs)** — structuring multi-step queries for readability
-- **Window functions** — `COUNT() OVER`, `FIRST_VALUE() OVER`, `PARTITION BY` for cohort retention analysis
-- **Subqueries (correlated and non-correlated)** — comparing individual values against group averages
-- **DDL / schema management** — `CREATE TABLE`, `ALTER TABLE` (renaming tables/columns, adding constraints, foreign keys)
+- **Joins:** `INNER JOIN` and `LEFT JOIN` across customers, orders, order items and products
+- **Aggregations:** `COUNT`, `COUNT(DISTINCT)`, `SUM`, `AVG`, `ROUND`, with `GROUP BY`
+- **Conditional logic:** `CASE WHEN` for grouping values into ranges and for pivoting
+- **Subqueries:** derived tables in the `FROM` clause
+- **CTEs:** multi-step queries with `WITH`
+- **Window functions:** `SUM() OVER ()`, `LAG()`, `FIRST_VALUE()`, `COUNT() OVER` with a running frame (`ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`)
+- **Date functions:** `DATE_TRUNC`, `EXTRACT`, `AGE`
+- **Pivoting:** `MAX(CASE WHEN ...)` to turn rows into columns
+- **Safe division:** `NULLIF` to avoid division by zero
 
+  
 ## Repository Structure
 
 
@@ -105,7 +106,7 @@ or slowing over time.
 
 <br><br>
 
-Customer value is heavily right-skewed: over half of all customers (5,031, ~52%) 
+Customer value is heavily right-skewed: over half of all customers (5,031, ~58%) 
 generate under 1,200 in total value, and the count drops off sharply with each 
 higher tier. Fewer than 20 customers exceed 8,400 in total value — a small but 
 potentially high-priority segment for retention efforts.
@@ -275,12 +276,11 @@ lower-priced, high-frequency purchases.
 
 <br><br>
 
-Cancelled orders are fairly evenly distributed across brands, ranging from 
-549 to 741 — a spread of roughly 35%, similar in scale to the total revenue 
-spread seen in Analysis 3.1. Notably, Zenith has both the highest average 
-rating (Analysis 3.4) and the highest number of cancelled orders, while Pulse 
-has the fewest cancellations. No brand stands out as having a disproportionate 
-cancellation problem relative to its overall sales volume.
+Cancelled orders are fairly evenly distributed across brands, ranging from 549
+to 741, a spread of roughly 35%. Zenith has the most cancellations and Pulse
+the fewest, while the remaining ten brands fall within a narrow band of 630 to
+696. Cancellations also do not simply follow sales volume: Willow, the
+top-earning brand (Analysis 3.1), ranks only 7th by number of cancelled orders.
 
 *Table 3.5 – Cancelled orders by brand*
 
@@ -301,6 +301,10 @@ Retention drops sharply after the first month. Each cohort starts with only
 ranges from 0% to about 20%. Only three cohorts keep any customers in month 2,
 and just one (November 2024) reaches month 3, meaning almost no customer
 orders continuously for more than two months in a row.
+
+`cohort_size` refers to customers who placed an order in their
+signup month, not to all customers who signed up that month (about 400-490
+per month).
 
 *Figure 4.1 – Monthly cohort retention (unbroken chain, % of month 0)*
 
