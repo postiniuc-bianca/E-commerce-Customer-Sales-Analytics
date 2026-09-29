@@ -269,7 +269,8 @@ total revenue — likely lower-priced, high-frequency purchases.
 
 *Table 3.4 – Number of orders by product category*
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4314dd5c-5136-4ac9-9e01-1e1b420f4133" />
+<img width="358" height="362" alt="image" src="https://github.com/user-attachments/assets/d80edaf4-aaa7-4b72-8eac-2e103cf2b11c" />
+
 
 <br><br>
 
